@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="grep.h" />
+    <ClInclude Include="my_grep.h" />
     <ClInclude Include="matching_pattern.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="grep.c" />
+    <ClCompile Include="my_grep.c" />
     <ClCompile Include="matching_pattern.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

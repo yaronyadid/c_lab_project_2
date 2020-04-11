@@ -15,18 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="grep.h">
+    <ClInclude Include="matching_pattern.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="matching_pattern.h">
+    <ClInclude Include="my_grep.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="grep.c">
+    <ClCompile Include="matching_pattern.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="matching_pattern.c">
+    <ClCompile Include="my_grep.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
