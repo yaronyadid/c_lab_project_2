@@ -1,0 +1,3 @@
+my_grep - contains the program's main method, as well as auxiliary methods for the grep logic (like its argument parsing).
+file_search_handler - contains methods to deal with files and searching expressions in them. 
+output_printer - contains the logic for printing the grep output to the command shell.
