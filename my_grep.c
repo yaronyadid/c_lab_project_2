@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "my_grep.h"
 #include "file_search_handler.h"
 
 void parse_command_args(Grep_args *grep_args, char **command_args, int command_args_num) {
-	int i = 1;
+	int i;
 
-	for (i; i < command_args_num; i++) {
+	for (i = 1; i < command_args_num; i++) {
 		if (!strcmp(command_args[i], "-b")) {
 		grep_args->b_arg = 1;
 		}
@@ -45,17 +46,19 @@ void parse_command_args(Grep_args *grep_args, char **command_args, int command_a
 }
 
 Grep_args *initialize_grep_args() {
-	A_arg *A_arg = malloc(sizeof(A_arg));
-	if (A_arg == NULL) {
+	A_arg *a_arg = malloc(sizeof(A_arg));
+	if (a_arg == NULL) {
 		exit(1);
 	}
+	a_arg->arg = 0;
+	a_arg->number = 0;
 
-	Grep_args *grep_args = calloc(1, sizeof(grep_args));
+	Grep_args *grep_args = calloc(1, sizeof(Grep_args));
 	if (grep_args == NULL) {
 		exit(1);
 	}
 
-	grep_args->A_arg = A_arg;
+	grep_args->A_arg = a_arg;
 	grep_args->file_name = NULL;
 	grep_args->expression_to_match = NULL;
 	return grep_args;

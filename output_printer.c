@@ -3,10 +3,10 @@
 void print_line(char *line, Grep_args *grep_args, File_search_info *file_search_info) {
 	char delimiter;
 	if (file_search_info->cur_line_has_match) {
-		delimiter = ":";
+		delimiter = ':';
 	}
 	else {
-		delimiter = "-";
+		delimiter = '-';
 	}
 
 	if (grep_args->c_arg) {
